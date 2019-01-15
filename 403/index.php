@@ -10,7 +10,7 @@ header("HTTP/1.0 403 Forbidden");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--<link rel="icon" type="image/png" sizes="16x16" href="https://beta.mstefan99.com/resources/ico.png">-->
-    <link rel="stylesheet" href="../error.css">
+    <link rel="stylesheet" href="../resources/error.css">
     <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
 
 </head>
