@@ -1,65 +1,67 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="resources/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126259429-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <head>
+        <link rel="stylesheet" type="text/css" href="resources/style.css">
+        <!-- WARNING: Google analythics disabled for development purposes. Enable when needed!
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126259429-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'UA-126259429-1');
-    </script>
-    <meta name="google-site-verification" content="YoYwM-_C1SP_vj-5wv9Lu1MSwNgMZj21psTvS2-nLHo" />
+            gtag('config', 'UA-126259429-1');
+        </script>
+        -->
+        <!-- WARNING: Favicon missing! -->
+        <link rel="icon" type="image/png" sizes="16x16" href="https://calc.mstefan99.com/resources/ico.png">
+        <meta name="description" content=""> <!-- TODO: fill in the description -->
+        <meta name="theme-color" content="#3B3940">
+        <meta name="author" content="Annushka project">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Annushka Project - Calculator</title>
+    </head>
+    <body>
 
-    <!-- TODO: Complete this block:
-    <link rel="icon" type="image/png" sizes="16x16" href="https://beta.mstefan99.com/resources/ico.png">
-    <meta name="description" content="">
-    <meta name="theme-color" content="#4a76a8">
-    -->
-    <meta name="author" content="Annushka project">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annushka Project - Calculator</title>
-</head>
-<body>
+        <div id="loader-wrapper" class="loaded">
+            <div id="loader" class="loaded">
+                <p>Loading takes longer than usual</p>
+                <p style="font-size: 5vh; display: block">Please wait...</p>
+                <div class="dots">
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                </div>
 
-<div id="loader-wrapper" class="loaded">
-    <div id="loader" class="loaded">
-        <p>Loading takes longer than usual</p>
-        <p style="font-size: 5vh; display: block">Please wait...</p>
-        <div class="dots">
-            <div class="dot dot1"></div>
-            <div class="dot dot2"></div>
-            <div class="dot dot3"></div>
+            </div>
         </div>
 
-    </div>
-</div>
+        <div id = page>
+            <div id = header>
+                <img id = logo src="" alt="Annushka Project Logo"> <!-- TODO: place the logo's URL here -->
+                <p id = about onclick="aboutClicked()">About</p>
+            </div>
 
-<div id = page>
-    <div id = header>
-        <img id = logo src="" alt="Annushka Project Logo"> <!-- TODO: place the logo's URL here -->
-        <a id = about href = >About</a> <!-- TODO: make "about" page and fill in the URL-->
-    </div>
-
-    <div id = content>
-        <div id = main>
-            <p class = center id = line1>Annushka Project's</p>
-            <p class = center id = line2>Calculator</p>
-            <p class = center id = line3>The last calculator you'll ever need</p>
-            <a class = "center button" href = ./index.html> <!-- TODO: place a link to download the app -->
-                <p class = buttonText>Download</p>
-            </a>
+            <div id = content>
+                <div id = main>
+                    <p class = center id = line1>Annushka Project's</p>
+                    <p class = center id = line2>Calculator</p>
+                    <p class = center id = line3>The last calculator you'll ever need</p>
+                    <a class = "center button" href = ./index.html> <!-- TODO: place a link to download the app -->
+                        <p class = buttonText>Download</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img id = phone src="./resources/phone.png" alt="Phone screenshot with an app opened">
+            </div>
+            <div class = hidden id = aboutPopup>
+                <p id = aboutTitle>About Annushka Project</p>
+                <p id = aboutMain></p> <!-- TODO: Fill in the about dialog -->
+            </div>
         </div>
-    </div>
-    <div>
-        <img id = phone src="./resources/phone.png" alt="Phone screenshot with an app opened">
-    </div>
-</div>
 
-<!-- This line should be at the end of body: -->
-<script src="resources/main.js"></script>
-</body>
+        <!-- This line should be at the end of body: -->
+        <script src="resources/main.js"></script>
+    </body>
 </html>
