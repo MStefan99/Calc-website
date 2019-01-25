@@ -9,12 +9,17 @@ function load() {
     loader.classList.remove('loaded');
 }
 
-function aboutClicked(){
-    aboutPopup.classList.toggle('hidden');
+function bodyClick(e) {
+    if (e.target.id === 'about') {
+        aboutPopup.classList.toggle('hidden');
+    } else if (e.target.id === 'aboutPopup') {
+    } else{
+        aboutPopup.classList.add('hidden');
+    }
 }
 
 window.onload = function() {
     wrapper.classList.add('loaded');
     loader.classList.add('loaded');
     clearTimeout(time);
-};
+}
