@@ -4,11 +4,19 @@ body{
 }
 
 #page{
-    background-color: #3B3940;
     padding: 0;
     margin: 0;
     color: white;
     font-family: sans-serif;
+}
+
+#content {
+    position: absolute;
+    background-color: #3B3940;
+    left: 0;
+    top: 20vh;
+    right: 0;
+    bottom: 0;
 }
 
 #header{
@@ -17,40 +25,48 @@ body{
     left: 0;
     top: 0;
     right: 0;
-    bottom: 90vh;
+    bottom: 80vh;
 }
 
-#logo{
+#logo {
     position: absolute;
     left: 3vw;
+    top: 2vh;
     margin: 1vh;
-    top: 50%;
-    transform: translateY(-50%);
     height: 8vw;
     width: auto;
 }
 
 #about{
     position: absolute;
-    right: 5vw;
+    margin: 1vh;
+    right: 3vw;
     width: fit-content;
-    margin: 0;
 }
 
-#content {
-    position: absolute;
-    background-color: #3B3940;
-    left: 0;
-    top: 10vh;
-    right: 0;
-    bottom: 0;
+@media screen and (min-width: 400px) {
+    #about {
+        top: 2vh;
+    }
 }
 
-#text{
+@media screen and (max-width: 400px) {
+    #about {
+        bottom: 0;
+    }
+}
+
+#main{
     position: absolute;
-    top: 40%;
-    left: 50%;
+    left: 50vw;
+    top: 25vh;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-height: 500px){
+    #main{
+        top: 20vh;
+    }
 }
 
 #line1{
@@ -94,10 +110,17 @@ body{
 
 #phone{
     position: absolute;
-    right: 10vw;
     bottom: 0;
-    height: 30vh;
     width: auto;
+    right: 10vw;
+    height: 30vh;
+}
+
+@media screen and (max-width: 510px){
+    #phone{
+        right: 10vw;
+        height: 20vh;
+    }
 }
 
 #loader-wrapper{
