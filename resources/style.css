@@ -70,15 +70,15 @@ body{
 }
 
 #line1{
-    font-size: x-large;
+    font-size: 4vh;
 }
 
 #line2{
-    font-size: xx-large;
+    font-size: 6vh;
 }
 
 #line3{
-    font-size: medium;
+    font-size: 3vh;
 }
 
 .center{
@@ -92,17 +92,19 @@ body{
     transform: translate(-50%);
     background-color: #F6941D;
     color: #000000;
-    border-radius: 5px;
+    border-radius: 1vh;
     margin: 0;
-    padding: 10px 20px;
+    padding: 2vh 2.5vh;
     text-decoration: none;
 }
 
 .buttonText{
+    font-size: 3vh;
     margin: 0;
 }
 
 #about, #about:visited{
+    font-size: 3vh;
     margin: 3vmin;
     color: #FFFFFF;
     text-decoration: none;
@@ -113,7 +115,14 @@ body{
     bottom: 0;
     width: auto;
     right: 10vw;
-    height: 30vh;
+    height: 50vh;
+}
+
+@media screen and (max-width: 2000px){
+    #phone{
+        right: 10vw;
+        height: 30vh;
+    }
 }
 
 @media screen and (max-width: 510px){
