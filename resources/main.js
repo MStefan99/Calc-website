@@ -2,9 +2,10 @@
 let wrapper = document.getElementById('loader-wrapper');
 let loader = document.getElementById('loader');
 let aboutPopup = document.getElementById('aboutPopup');
-var line1 = 'Annushka Project\'s';
-var line2 = 'Calculator';
-var line3 = 'The last calculator you\'ll ever need';
+let line1 = 'Annushka Project\'s';
+let line2 = 'Calculator';
+let line3 = 'The last calculator you\'ll ever need';
+let buttons = document.getElementsByClassName('button');
 charTime = 70;
 var i = 0;
 
@@ -60,6 +61,12 @@ function typeWriter3() {
         i++;
         setTimeout(typeWriter3, charTime);
     } else {
-
+        showButtons();
     }
+}
+
+function showButtons(){
+    Array.from(buttons).forEach(function (el) {
+        el.classList.remove('hidden');
+    });
 }

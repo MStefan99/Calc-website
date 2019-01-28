@@ -128,6 +128,8 @@ body{
     padding: 2vh 2.5vh;
     text-decoration: none;
     cursor: pointer;
+    transition: opacity .6s cubic-bezier(0.22, 0.61, 0.36, 1),
+    top .8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .buttonText{
