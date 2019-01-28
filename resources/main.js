@@ -1,4 +1,3 @@
-
 let wrapper = document.getElementById('loader-wrapper');
 let loader = document.getElementById('loader');
 let aboutPopup = document.getElementById('aboutPopup');
@@ -6,6 +5,7 @@ let line1 = 'Annushka Project\'s';
 let line2 = 'Calculator';
 let line3 = 'The last calculator you\'ll ever need';
 let buttons = document.getElementsByClassName('button');
+let phone = document.getElementById('phone');
 charTime = 70;
 var i = 0;
 
@@ -65,8 +65,13 @@ function typeWriter3() {
     }
 }
 
-function showButtons(){
+function showButtons() {
     Array.from(buttons).forEach(function (el) {
         el.classList.remove('hidden');
     });
+    setTimeout(showPhone, 100);
+}
+
+function showPhone() {
+    phone.classList.remove('hidden');
 }

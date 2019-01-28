@@ -79,6 +79,7 @@ body{
     right: 3vw;
     width: fit-content;
     cursor: pointer;
+    transition: all .8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 @media screen and (max-width: 400px) {
@@ -128,8 +129,7 @@ body{
     padding: 2vh 2.5vh;
     text-decoration: none;
     cursor: pointer;
-    transition: opacity .6s cubic-bezier(0.22, 0.61, 0.36, 1),
-    top .8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: all .8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .buttonText{
@@ -150,6 +150,7 @@ body{
     width: auto;
     right: 10vw;
     height: 20vh;
+    transition: all .8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 @media screen and (min-aspect-ratio: 55/80){
@@ -189,8 +190,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity .6s cubic-bezier(0.22, 0.61, 0.36, 1),
-        top .8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: all .8s cubic-bezier(0.22, 0.61, 0.36, 1);
     height: 45vh;
     width: 45vw;
     border-radius: 5vh;
@@ -231,7 +231,17 @@ body{
 
 .hidden{
     pointer-events: none;
-    top: 55% !important;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.button.hidden{
+    transform: translate(-50%, 100%);
+    opacity: 0;
+}
+
+#aboutPopup.hidden{
+    transform: translate(-50%, 0%);
     opacity: 0;
 }
 
