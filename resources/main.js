@@ -6,14 +6,16 @@ let line2 = 'Calculator';
 let line3 = 'The last calculator you\'ll ever need';
 let buttons = document.getElementsByClassName('button');
 let phone = document.getElementById('phone');
+
 charTime = 70;
 var i = 0;
-
+var typingDelay = 200;
 time = setTimeout(load, 1000);
 
 function load() {
     wrapper.classList.remove('loaded');
     loader.classList.remove('loaded');
+    typingDelay = 800;
 }
 
 function bodyClick(e) {
@@ -29,7 +31,7 @@ window.onload = function() {
     wrapper.classList.add('loaded');
     loader.classList.add('loaded');
     clearTimeout(time);
-    typeWriter1();
+    setTimeout(typeWriter1, typingDelay);
 };
 
 function typeWriter1() {
