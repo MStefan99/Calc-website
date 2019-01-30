@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-- WARNING: Google analythics disabled for development purposes. Enable when needed!
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126259429-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-126259429-1');
+        </script>
+        -->
+        <!-- WARNING: Favicon missing! -->
+        <link rel="icon" type="image/png" sizes="16x16" href="https://calc.mstefan99.com/resources/ico.png">
+        <meta name="description" content=""> <!-- TODO: fill in the description -->
+        <meta name="theme-color" content="#3B3940">
+        <meta name="author" content="Annushka project">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Annushka Project - Calculator</title>
+    </head>
+    <body>
+
+        <div id = page onclick="bodyClick(event)">
+            <div id = header>
+                <img id = logo src="" alt="Annushka Project Logo"> <!-- TODO: place the logo's URL here -->
+            </div>
+
+            <div id = content>
+                <div id = main>
+                    <p class = "center hidden" id = line3>Sorry, at the moment the app is only available on mobile platforms.</p>
+                    <a class = "center button hidden" id = button href = ../index.html> <!-- TODO: place a link to download the app -->
+                        <p class = buttonText>Return to the main page</p>
+                    </a>
+                </div>
+            </div>
+
+            <script language=javascript>
+                let text = document.getElementById('line3');
+                let button = document.getElementById('button');
+                if ((navigator.userAgent.includes("iPhone")) || (navigator.userAgent.includes("Pod")) || (navigator.userAgent.match("Pad"))) {
+                    location.replace("http://calc.mstefan99.com/download-ios"); //TODO: place a link to iOS download page
+                } else if ((navigator.userAgent.includes("Android"))) {
+                    location.replace("http://calc.mstefan99.com/download-android"); //TODO: palce a link to Android download page
+                } else {
+                    text.classList.remove('hidden');
+                    button.classList.remove('hidden');
+                }
+            </script>
+        </div>
+    </body>
+</html>
