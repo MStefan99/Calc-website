@@ -21,32 +21,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Annushka Project - Calculator</title>
     </head>
+
     <body>
+        <style>
+            #buttoniOS{
+                transform: translate(-50%,150%);
+            }
+        </style>
 
         <div id = page onclick="bodyClick(event)">
-            <div id = header>
+            <a href="../index.html" id = header>
                 <img id = logo src="" alt="Annushka Project Logo"> <!-- TODO: place the logo's URL here -->
-            </div>
+            </a>
 
             <div id = content>
                 <div id = main>
-                    <p class = "center hidden" id = line3>Sorry, at the moment the app is only available on mobile platforms.</p>
-                    <a class = "center button hidden" id = button href = ../index.html> <!-- TODO: place a link to download the app -->
-                        <p class = buttonText>Return to the main page</p>
+                    <p class = "center" id = line3>It seems like you are not using your mobile device. The app
+                        now is available only for iOS and Android. You can install the app on your phone using
+                        the buttons below: </p>
+                    <a class = "center button" id = buttoniOS href = https://calc.mstefan99.com/download-ios> <!-- TODO: place a link to download the app -->
+                        <p class = buttonText>iOS download</p>
+                    </a>
+                    <a class = "center button" id = buttonAndroid href = https://calc.mstefan99.com/download-android> <!-- TODO: place a link to download the app -->
+                        <p class = buttonText>Android download</p>
                     </a>
                 </div>
             </div>
 
             <script language=javascript>
-                let text = document.getElementById('line3');
-                let button = document.getElementById('button');
+                let hidden = document.getElementsByClassName('hidden');
                 if ((navigator.userAgent.includes("iPhone")) || (navigator.userAgent.includes("Pod")) || (navigator.userAgent.match("Pad"))) {
-                    location.replace("http://calc.mstefan99.com/download-ios"); //TODO: place a link to iOS download page
+                    location.replace("https://calc.mstefan99.com/download-ios"); //TODO: place a link to iOS download page
                 } else if ((navigator.userAgent.includes("Android"))) {
-                    location.replace("http://calc.mstefan99.com/download-android"); //TODO: palce a link to Android download page
+                    location.replace("https://calc.mstefan99.com/download-android"); //TODO: palce a link to Android download page
                 } else {
-                    text.classList.remove('hidden');
-                    button.classList.remove('hidden');
                 }
             </script>
         </div>
