@@ -37,11 +37,8 @@
             <div id = content>
                 <div id = main>
                     <p class = "center" id = line3>It seems like you are not using your mobile device. The app
-                        now is available only for iOS and Android. You can install the app on your phone using
+                        now is available only for Android platform. You can install the app on your phone using
                         the buttons below: </p>
-                    <a class = "center button" id = buttoniOS href = https://calc.mstefan99.com/download-ios> <!-- TODO: place a link to download the app -->
-                        <p class = buttonText>iOS download</p>
-                    </a>
                     <a class = "center button" id = buttonAndroid href = https://calc.mstefan99.com/download-android> <!-- TODO: place a link to download the app -->
                         <p class = buttonText>Android download</p>
                     </a>
@@ -50,9 +47,7 @@
 
             <script language=javascript>
                 let hidden = document.getElementsByClassName('hidden');
-                if ((navigator.userAgent.includes("iPhone")) || (navigator.userAgent.includes("Pod")) || (navigator.userAgent.match("Pad"))) {
-                    location.replace("https://calc.mstefan99.com/download-ios"); //TODO: place a link to iOS download page
-                } else if ((navigator.userAgent.includes("Android"))) {
+                if ((navigator.userAgent.includes("Android"))) {
                     location.replace("https://calc.mstefan99.com/download-android"); //TODO: palce a link to Android download page
                 } else {
                 }

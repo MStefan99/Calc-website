@@ -6,6 +6,7 @@ let line2 = 'Calculator';
 let line3 = 'The last calculator you\'ll ever need';
 let buttons = document.getElementsByClassName('button');
 let phone = document.getElementById('phone');
+let timer = document.getElementById('timer');
 
 charTime = 70;
 var i = 0;
@@ -63,7 +64,8 @@ function typeWriter3() {
         i++;
         setTimeout(typeWriter3, charTime);
     } else {
-        showButtons();
+        startTimer();
+        setTimeout(showPhone, 100);
     }
 }
 
@@ -71,9 +73,49 @@ function showButtons() {
     Array.from(buttons).forEach(function (el) {
         el.classList.remove('hidden');
     });
-    setTimeout(showPhone, 100);
+}
+
+function hideButtons() {
+    Array.from(buttons).forEach(function (el) {
+        el.classList.add('hidden');
+    });
 }
 
 function showPhone() {
     phone.classList.remove('hidden');
+}
+
+function startTimer() {
+// Set the date we're counting down to
+var countDownDate = new Date("March 13, 2019 09:00:00").getTime();
+
+// Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        timer.innerHTML = "Launching in: <br>" + days + " days " + hours + " hours <br>"
+            + minutes + " minutes " + seconds + " seconds ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            timer.classList.add("hidden");
+            showButtons();
+        } else {
+            timer.classList.remove("hidden");
+            hideButtons();
+        }
+    }, 1000);
 }
