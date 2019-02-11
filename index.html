@@ -36,32 +36,29 @@
             </div>
         </div>
 
-        <div id = page>
+        <div id = page onclick="bodyClick(event)">
             <div id = header>
                 <img id = logo src="" alt="Annushka Project Logo"> <!-- TODO: place the logo's URL here -->
-                <p id = about onclick="aboutClicked()">About</p>
+                <p id = about>About</p>
             </div>
 
             <div id = content>
                 <div id = main>
-                    <p class = center id = line1>Annushka Project's</p>
-                    <p class = center id = line2>Calculator</p>
-                    <p class = center id = line3>The last calculator you'll ever need</p>
-                    <a class = "center button" href = ./index.html> <!-- TODO: place a link to download the app -->
-                        <p class = buttonText>Download</p>
-                    </a>
+                    <p class = center id = line1></p>
+                    <p class = center id = line2></p>
+                    <p class = center id = line3></p>
+                        <a class = "center button hidden" href = ./resources/download.html> <!-- TODO: place a link to download the app -->
+                            <p class = buttonText>Download</p>
+                        </a>
+                    <p class="center" id="timer" style="font-size: large"></p>
                 </div>
             </div>
-            <div>
-                <img id = phone src="./resources/phone.png" alt="Phone screenshot with an app opened">
-            </div>
+                <img id = phone class = hidden src="./resources/phone.png" alt="Phone screenshot with an app opened">
             <div class = hidden id = aboutPopup>
                 <p id = aboutTitle>About Annushka Project</p>
                 <p id = aboutMain></p> <!-- TODO: Fill in the about dialog -->
             </div>
         </div>
-
-        <!-- This line should be at the end of body: -->
         <script src="resources/main.js"></script>
     </body>
 </html>
