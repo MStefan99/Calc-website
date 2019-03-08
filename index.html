@@ -1,64 +1,55 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="resources/style.css">
-        <!-- WARNING: Google analythics disabled for development purposes. Enable when needed!
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126259429-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<head>
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <!-- WARNING: Google analytics disabled for development purposes. Enable when needed! -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="description" content=""> <!-- TODO: fill in the description -->
+    <meta name="theme-color" content="#3B3940">
+    <meta name="author" content="Annushka project">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annushka Project - Calculator</title>
+</head>
+<body>
 
-            gtag('config', 'UA-126259429-1');
-        </script>
-        -->
-        <!-- WARNING: Favicon missing! -->
-        <link rel="icon" type="image/png" sizes="16x16" href="https://calc.mstefan99.com/resources/ico.png">
-        <meta name="description" content=""> <!-- TODO: fill in the description -->
-        <meta name="theme-color" content="#3B3940">
-        <meta name="author" content="Annushka project">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Annushka Project - Calculator</title>
-    </head>
-    <body>
-
-        <div id="loader-wrapper" class="loaded">
-            <div id="loader" class="loaded">
-                <p>Loading takes longer than usual</p>
-                <p style="font-size: 5vh; display: block">Please wait...</p>
-                <div class="dots">
-                    <div class="dot dot1"></div>
-                    <div class="dot dot2"></div>
-                    <div class="dot dot3"></div>
-                </div>
-
-            </div>
+<div id="loader-wrapper" class="loaded">
+    <div id="loader" class="loaded">
+        <p>Loading takes longer than usual</p>
+        <p style="font-size: 5vh; display: block">Please wait...</p>
+        <div class="dots">
+            <div class="dot dot1"></div>
+            <div class="dot dot2"></div>
+            <div class="dot dot3"></div>
         </div>
 
-        <div id = page onclick="bodyClick(event)">
-            <div id = header>
-                <img id = logo src="" alt="Annushka Project Logo"> <!-- TODO: place the logo's URL here -->
-                <p id = about>About</p>
-            </div>
+    </div>
+</div>
 
-            <div id = content>
-                <div id = main>
-                    <p class = center id = line1></p>
-                    <p class = center id = line2></p>
-                    <p class = center id = line3></p>
-                        <a class = "center button hidden" href = ./resources/download.html> <!-- TODO: place a link to download the app -->
-                            <p class = buttonText>Download</p>
-                        </a>
-                    <p class="center" id="timer" style="font-size: large"></p>
-                </div>
-            </div>
-                <img id = phone class = hidden src="./resources/phone.png" alt="Phone screenshot with an app opened">
-            <div class = hidden id = aboutPopup>
-                <p id = aboutTitle>About Annushka Project</p>
-                <p id = aboutMain></p> <!-- TODO: Fill in the about dialog -->
-            </div>
+<div id=page onclick="bodyClick(event)">
+    <div id=header>
+        <img id=logo src="./resources/logo.svg" alt="Annushka Project Logo">
+        <p id=about>About</p>
+    </div>
+
+    <div id=content>
+        <div id=main>
+            <p class=center id=line1></p>
+            <p class=center id=line2></p>
+            <p class=center id=line3></p>
+            <a class="center button hidden" href=./resources/download.html>
+                <p class=buttonText>Download</p>
+            </a>
+            <p class="center" id="timer" style="font-size: large"></p>
         </div>
-        <script src="resources/main.js"></script>
-    </body>
+    </div>
+    <img id=phone class=hidden src="./resources/phone.png" alt="Phone screenshot with an app opened">
+    <div class=hidden id=aboutPopup>
+        <p id=aboutTitle>About Annushka Project</p>
+        <p id=aboutMain></p> <!-- TODO: Fill in the about dialog -->
+    </div>
+</div>
+<script src="./resources/main.js"></script>
+</body>
 </html>

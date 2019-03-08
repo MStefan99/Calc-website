@@ -1,4 +1,4 @@
-:root{
+:root {
     --main-color: #3B3940;
     --secondary-color: #29272e;
     --scrollbar-color: #343039;
@@ -7,7 +7,7 @@
     --accent-hover: #ffb433;
     --text-hover: #9b9b9b;
     overflow: hidden;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -30,12 +30,12 @@
     background: var(--scrollbar-color);
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
 }
 
-#page{
+#page {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -55,7 +55,7 @@ body{
     bottom: 0;
 }
 
-#header{
+#header {
     position: absolute;
     background-color: var(--main-color);
     left: 0;
@@ -69,16 +69,16 @@ body{
     left: 3vw;
     top: 2vh;
     margin: 1vh;
-    height: 8vw;
-    width: auto;
+    width: 18em;
+    max-width: 65vw;
     cursor: pointer;
 }
 
-#about{
+#about {
     position: absolute;
-    margin: 1vh;
     top: 2vh;
     right: 3vw;
+    margin: 3vh 2vw !important;
     width: fit-content;
     cursor: pointer;
     transition: all .8s cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -90,36 +90,36 @@ body{
     }
 }
 
-#main{
+#main {
     position: absolute;
     left: 50vw;
     top: 25vh;
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-aspect-ratio: 10/16){
-    #main{
+@media screen and (max-aspect-ratio: 10/16) {
+    #main {
         top: 20vh;
     }
 }
 
-#line1{
+#line1 {
     font-size: 4vh;
 }
 
-#line2{
+#line2 {
     font-size: 6vh;
 }
 
-#line3{
+#line3 {
     font-size: 3vh;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.button{
+.button {
     width: fit-content;
     position: absolute;
     left: 50%;
@@ -134,27 +134,27 @@ body{
     transition: all .8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.button:hover{
+.button:hover {
     background-color: var(--accent-hover);
 }
 
-.buttonText{
+.buttonText {
     font-size: 3vh;
     margin: 0;
 }
 
-#about, #about:visited{
+#about, #about:visited {
     font-size: 3vh;
     margin: 3vmin;
     color: white;
     text-decoration: none;
 }
 
-#about:hover{
+#about:hover {
     color: var(--text-hover);
 }
 
-#phone{
+#phone {
     position: absolute;
     bottom: -2vh;
     width: auto;
@@ -163,49 +163,49 @@ body{
     transition: all .8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-#phone:hover{
+#phone:hover {
     bottom: 0;
 }
 
-@media screen and (min-aspect-ratio: 55/80){
-    #phone{
+@media screen and (min-aspect-ratio: 55/80) {
+    #phone {
         height: 25vh;
         bottom: -1.2vh;
     }
 }
 
-@media screen and (min-aspect-ratio: 14/16){
-    #phone{
+@media screen and (min-aspect-ratio: 14/16) {
+    #phone {
         height: 30vh;
         bottom: -.5vh;
     }
 }
 
-@media screen and (min-aspect-ratio: 11/10){
-    #phone{
+@media screen and (min-aspect-ratio: 11/10) {
+    #phone {
         height: 40vh;
     }
 }
 
-@media screen and (min-aspect-ratio: 15/8){
-    #phone{
+@media screen and (min-aspect-ratio: 15/8) {
+    #phone {
         right: 5vw;
         height: 60vh;
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 380px) {
     #phone {
         left: 50%;
         transform: translateX(-50%);
     }
 
-    #phone.hidden{
+    #phone.hidden {
         transform: translate(-50%, 100%);
     }
 }
 
-#aboutPopup{
+#aboutPopup {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -219,29 +219,29 @@ body{
     margin: 0;
 }
 
-@media screen and (min-width: 850px){
-    #aboutPopup{
+@media screen and (min-width: 850px) {
+    #aboutPopup {
         width: 70vw;
     }
 }
 
-@media screen and (max-width: 850px){
-    #aboutPopup{
+@media screen and (max-width: 850px) {
+    #aboutPopup {
         width: 80vw;
     }
 
 }
 
-@media screen and (max-width: 550px){
-    #aboutPopup{
+@media screen and (max-width: 550px) {
+    #aboutPopup {
         width: 90vw;
         height: 65vh;
     }
 
 }
 
-@media screen and (max-width: 350px){
-    #aboutPopup{
+@media screen and (max-width: 350px) {
+    #aboutPopup {
         top: 60%;
         width: 100vw;
         height: 80vh;
@@ -249,30 +249,30 @@ body{
 
 }
 
-.hidden{
+.hidden {
     pointer-events: none;
     transform: translateY(100%);
     opacity: 0;
 }
 
-.button.hidden{
+.button.hidden {
     transform: translate(-50%, 100%);
     opacity: 0;
 }
 
-#aboutPopup.hidden{
+#aboutPopup.hidden {
     transform: translate(-50%, 0%);
     opacity: 0;
 }
 
-#aboutTitle{
+#aboutTitle {
     font-size: 4vh;
     margin: 1% 5vw 0;
     text-align: center;
     height: 20%;
 }
 
-#aboutMain{
+#aboutMain {
     position: absolute;
     margin: 0 2vw 6vh;
     top: 6vh;
@@ -280,7 +280,7 @@ body{
     overflow-y: auto;
 }
 
-#loader-wrapper{
+#loader-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -290,7 +290,7 @@ body{
     z-index: 100;
 }
 
-#loader{
+#loader {
     position: absolute;
     text-align: center;
     top: 50vh;
@@ -299,7 +299,7 @@ body{
     z-index: 101;
 }
 
-#loader > p{
+#loader > p {
     text-align: center;
     font-family: sans-serif;
     display: inline;
@@ -308,12 +308,12 @@ body{
     text-shadow: 0 0 20px rgba(255, 246, 168, 0.71);
 }
 
-.dots{
+.dots {
     height: 5vh;
     text-align: center;
 }
 
-.dot{
+.dot {
     display: inline-flex;
     position: relative;
     height: 2.5vh;
@@ -323,12 +323,12 @@ body{
 
 }
 
-#loader.loaded{
+#loader.loaded {
     transform: translate(-50%, -100vh);
     transition: all .6s;
 }
 
-#loader-wrapper.loaded{
+#loader-wrapper.loaded {
     visibility: hidden;
     opacity: 0;
     transition: all .3s .4s;
@@ -336,67 +336,67 @@ body{
 
 
 @-webkit-keyframes load {
-    0%{
+    0% {
         top: 0;
         background-color: #fff;
         box-shadow: 0 0 20px #fff;
     }
 
-    10%{
+    10% {
         top: 100%;
         background-color: #ff674f;
         box-shadow: 0 0 20px #ff674f;
     }
 
-    20%{
+    20% {
         top: 0;
         background-color: #fff;
         box-shadow: 0 0 20px #fff;
     }
 
-    30%{
+    30% {
         top: 100%;
         background-color: #fff35d;
         box-shadow: 0 0 20px #fff35d;
     }
 
-    40%{
+    40% {
         top: 0;
         background-color: #fff;
         box-shadow: 0 0 20px #fff;
     }
 
-    50%{
+    50% {
         top: 100%;
         background-color: #87ffb7;
         box-shadow: 0 0 20px #87ffb7;
     }
 
-    60%{
+    60% {
         top: 0;
         background-color: #fff;
         box-shadow: 0 0 20px #fff;
     }
 
-    70%{
+    70% {
         top: 100%;
         background-color: #90d0ff;
         box-shadow: 0 0 20px #90d0ff;
     }
 
-    80%{
+    80% {
         top: 0;
         background-color: #fff;
         box-shadow: 0 0 20px #fff;
     }
 
-    90%{
+    90% {
         top: 100%;
         background-color: #b590ff;
         box-shadow: 0 0 20px #b590ff;
     }
 
-    100%{
+    100% {
         top: 0;
         background-color: #fff;
         box-shadow: 0 0 20px #fff;
@@ -404,14 +404,14 @@ body{
 
 }
 
-.dot1{
+.dot1 {
     animation: load 6.5s cubic-bezier(0.75, 0, 0.25, 1) infinite;
 }
 
-.dot2{
+.dot2 {
     animation: load 6.5s 0.2s cubic-bezier(0.75, 0, 0.25, 1) infinite;
 }
 
-.dot3{
+.dot3 {
     animation: load 6.5s 0.4s cubic-bezier(0.75, 0, 0.25, 1) infinite;
 }
