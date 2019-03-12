@@ -29,7 +29,7 @@ header("HTTP/1.0 500 Internal Server Error");
     </div>
 
     <div id="info">It seems, there are some problems<br>with the server you're trying to reach.</div>
-    <a  href="http://calc.mstefan99.com">
+    <a href="http://calc.mstefan99.com">
         <div id="btn" style="display: block;">
             <p>Back to site</p>
         </div>

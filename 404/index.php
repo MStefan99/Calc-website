@@ -28,10 +28,10 @@ header("HTTP/1.0 404 Not Found");
     </div>
 
     <div id="info">We can't seem to find the page<br>you're looking for.</div>
-    <a  href="http://calc.mstefan99.com">
-    <div id="btn" style="display: block;">
-        <p>Back to site</p>
-    </div>
+    <a href="http://calc.mstefan99.com">
+        <div id="btn" style="display: block;">
+            <p>Back to site</p>
+        </div>
     </a>
 </div>
 <div id="ring-back"></div>

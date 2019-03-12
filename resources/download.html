@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="./style.css">
-        <!-- WARNING: Google analythics disabled for development purposes. Enable when needed!
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126259429-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<head>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <!-- WARNING: Google analythics disabled for development purposes. Enable when needed!
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126259429-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', 'UA-126259429-1');
-        </script>
-        -->
-        <!-- WARNING: Favicon missing! -->
-        <link rel="icon" type="image/png" sizes="16x16" href="https://calc.mstefan99.com/resources/ico.png">
-        <meta name="description" content=""> <!-- TODO: fill in the description -->
-        <meta name="theme-color" content="#3B3940">
-        <meta name="author" content="Annushka project">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Annushka Project - Calculator</title>
-    </head>
+        gtag('config', 'UA-126259429-1');
+    </script>
+    -->
+    <!-- WARNING: Favicon missing! -->
+    <link href="https://calc.mstefan99.com/resources/ico.png" rel="icon" sizes="16x16" type="image/png">
+    <meta content="" name="description"> <!-- TODO: fill in the description -->
+    <meta content="#3B3940" name="theme-color">
+    <meta content="Annushka project" name="author">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Annushka Project - Calculator</title>
+</head>
 
-    <body>
-        <style>
-            #buttoniOS{
-                transform: translate(-50%,150%);
-            }
-        </style>
+<body>
+<style>
+    #buttoniOS {
+        transform: translate(-50%, 150%);
+    }
+</style>
 
-        <div id = page onclick="bodyClick(event)">
-            <a href="../index.html" id = header>
-                <img id=logo src="./logo.svg" alt="Annushka Project Logo">
+<div id=page onclick="bodyClick(event)">
+    <a href="../index.html" id=header>
+        <img alt="Annushka Project Logo" id=logo src="./logo.svg">
+    </a>
+
+    <div id=content>
+        <div id=main>
+            <p class="center" id=line3>It seems like you are not using your mobile device. The app
+                now is available only for Android platform. You can install the app on your phone using
+                the buttons below: </p>
+            <a class="center button" href=https://calc.mstefan99.com/download-android id=buttonAndroid>
+                <!-- TODO: place a link to download the app -->
+                <p class=buttonText>Android download</p>
             </a>
-
-            <div id = content>
-                <div id = main>
-                    <p class = "center" id = line3>It seems like you are not using your mobile device. The app
-                        now is available only for Android platform. You can install the app on your phone using
-                        the buttons below: </p>
-                    <a class = "center button" id = buttonAndroid href = https://calc.mstefan99.com/download-android> <!-- TODO: place a link to download the app -->
-                        <p class = buttonText>Android download</p>
-                    </a>
-                </div>
-            </div>
-
-            <script language=javascript>
-                let hidden = document.getElementsByClassName('hidden');
-                if ((navigator.userAgent.includes("Android"))) {
-                    location.replace("https://calc.mstefan99.com/download-android"); //TODO: palce a link to Android download page
-                } else {
-                }
-            </script>
         </div>
-    </body>
+    </div>
+
+    <script language=javascript>
+        let hidden = document.getElementsByClassName('hidden');
+        if ((navigator.userAgent.includes("Android"))) {
+            location.replace("https://calc.mstefan99.com/download-android"); //TODO: palce a link to Android download page
+        } else {
+        }
+    </script>
+</div>
+</body>
 </html>

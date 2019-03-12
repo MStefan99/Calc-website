@@ -23,12 +23,12 @@ function bodyClick(e) {
     if (e.target.id === 'about') {
         aboutPopup.classList.toggle('hidden');
     } else if (e.target.id === 'aboutPopup') {
-    } else{
+    } else {
         aboutPopup.classList.add('hidden');
     }
 }
 
-window.onload = function() {
+window.onload = function () {
     wrapper.classList.add('loaded');
     loader.classList.add('loaded');
     clearTimeout(time);
@@ -87,7 +87,7 @@ function showPhone() {
 
 function startTimer() {
 // Set the date we're counting down to
-var countDownDate = new Date("March 13, 2019 09:00:00").getTime();
+    var countDownDate = new Date("March 13, 2019 09:00:00").getTime();
 
 // Update the count down every 1 second
     var x = setInterval(function () {

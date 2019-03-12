@@ -29,7 +29,7 @@ header("HTTP/1.0 403 Forbidden");
 
 
     <div id="info">You don't have access to the page<br>you've tried to view.</div>
-    <a  href="http://calc.mstefan99.com">
+    <a href="http://calc.mstefan99.com">
         <div id="btn" style="display: block;">
             <p>Back to site</p>
         </div>

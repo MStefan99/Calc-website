@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <link href="resources/style.css" rel="stylesheet" type="text/css">
     <!-- WARNING: Google analytics disabled for development purposes. Enable when needed! -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./resources/icon.png">
+    <link href="./resources/icon.png" rel="icon" sizes="32x32" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <meta name="description" content="">
+    <meta content="" name="description">
     Programmer’s calculator is the ideal tool if you are doing calculations on a daily basis.
     The programmer’s calculator maintains scientific calculations, programmer calculations, dark and light themes for
     comfortable usage in day and night time.
     Share this App with your friends and mates.
-    <meta name="theme-color" content="#3B3940">
-    <meta name="author" content="Annushka project">
+    <meta content="#3B3940" name="theme-color">
+    <meta content="Annushka project" name="author">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Annushka Project - Calculator</title>
 </head>
 <body>
 
-<div id="loader-wrapper" class="loaded">
-    <div id="loader" class="loaded">
+<div class="loaded" id="loader-wrapper">
+    <div class="loaded" id="loader">
         <p>Loading takes longer than usual</p>
         <p style="font-size: 5vh; display: block">Please wait...</p>
         <div class="dots">
@@ -33,7 +33,7 @@
 </div>
 <div id=page onclick="bodyClick(event)">
     <div id=header>
-        <img id=logo src="./resources/logo.svg" alt="Annushka Project Logo">
+        <img alt="Annushka Project Logo" id=logo src="./resources/logo.svg">
         <p id=about>About</p>
     </div>
 
@@ -49,7 +49,7 @@
             <p class="center" id="timer" style="font-size: large"></p>
         </div>
     </div>
-    <img id=phone class=hidden src="./resources/phone.png" alt="Phone screenshot with an app opened">
+    <img alt="Phone screenshot with an app opened" class=hidden id=phone src="./resources/phone.png">
     <div class=hidden id=aboutPopup>
         <p id=aboutTitle>About Annushka Project</p>
         <p id=aboutMain>We are Mariia, Mikhail and Rukhsora and we are students from Helsinki Metropolia University of
