@@ -91,6 +91,7 @@ body {
 }
 
 #main {
+    pointer-events: none;
     position: absolute;
     left: 50vw;
     top: 25vh;
@@ -120,6 +121,7 @@ body {
 }
 
 .button {
+    pointer-events: initial;
     width: fit-content;
     position: absolute;
     left: 50%;
