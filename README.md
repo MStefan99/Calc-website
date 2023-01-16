@@ -1,11 +1,9 @@
-# Landing page for Programmer Android calculator
+# Website for Programmer calculator
 
-## Installation
+![Maintenance](https://img.shields.io/maintenance/no/2019?style=flat-square)
 
-To download the app just go to the website and download the apk file by clicking on download button from your Android device   
-Then enable app installs from unknown sources in your Android settings and install the app
+This repository contains a website for [Programmer calculator app for Android][app], developed as part of a college course.  
+To use, simply open the `index.html` file in a web browser.
 
-## Calculator
-The Calculator is an Android application for making scientific or programming calculations. The app supports also different color schemes and is translated to 6 languages.
+[app]: https://github.com/MStefan99/programmer-calculator
 
-Calculator application developed for Metropolia UAS Mobile course.
